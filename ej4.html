@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="es">
+<head><meta charset="utf-8"><title>Ejercicio 4 - Bucles y Acumuladores</title>
+<link rel="stylesheet" href="styles.css"></head>
+<body><h1>Ejercicio 4 - Bucles y Acumuladores</h1>
+
+<main>
+<h3>Imprimir numeros impares</h3>
+<button type="button", onclick="Myfunction()">Enviar</button>
+<div class="output" id="resultado"></div></main>
+<script>
+function Myfunction(){
+let result = "";
+for(let i=1;i<21;i++){
+if (i % 2 !== 0){
+result += i + "<br>";
+document.getElementById("resultado").innerHTML = result;
+}
+}
+}
+</script></body></html>
